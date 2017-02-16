@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import jfxtras.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="backround-pane" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <FlowPane alignment="CENTER_RIGHT" columnHalignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="menu">
+         <children>
+            <JFXTextField maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Buscar" unFocusColor="#3c84ff">
+               <FlowPane.margin>
+                  <Insets right="10.0" />
+               </FlowPane.margin>
+            </JFXTextField>
+            <JFXButton styleClass="btn" text="Nuevo">
+               <FlowPane.margin>
+                  <Insets right="10.0" />
+               </FlowPane.margin></JFXButton>
+            <JFXButton styleClass="btn" text="Editar">
+               <FlowPane.margin>
+                  <Insets right="10.0" />
+               </FlowPane.margin></JFXButton>
+            <JFXButton styleClass="btn-desactive" text="Dar de Baja">
+               <FlowPane.margin>
+                  <Insets right="10.0" />
+               </FlowPane.margin>
+            </JFXButton>
+            <JFXButton styleClass="btn-delete" text="Eliminar">
+               <FlowPane.margin>
+                  <Insets right="10.0" />
+               </FlowPane.margin>
+            </JFXButton>
+            <JFXButton styleClass="btn" text="Cancelar">
+               <FlowPane.margin>
+                  <Insets right="10.0" />
+               </FlowPane.margin>
+            </JFXButton>
+            <JFXButton styleClass="btn" text="Editar" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </FlowPane>
+      <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="backround-pane">
+         <children>
+            <TableView maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="backround-pane" HBox.hgrow="ALWAYS">
+              <columns>
+                  <TableColumn prefWidth="75.0" styleClass="menu" text="Clave" />
+                <TableColumn prefWidth="75.0" styleClass="menu" text="Fecha Inicio" />
+                <TableColumn prefWidth="75.0" styleClass="menu" text="Fecha Final" />
+                  <TableColumn prefWidth="75.0" styleClass="menu" text="Nombre" />
+                  <TableColumn prefWidth="75.0" styleClass="menu" text="Descripcion" />
+                  <TableColumn prefWidth="75.0" styleClass="menu" text="Objetivos" />
+                  <TableColumn prefWidth="75.0" styleClass="menu" text="Tecnología" />
+                  <TableColumn prefWidth="75.0" styleClass="menu" text="Líder" />
+                  <TableColumn prefWidth="75.0" styleClass="menu" text="L.Cliente" />
+                  <TableColumn prefWidth="75.0" styleClass="menu" text="Clientes" />
+                  <TableColumn prefWidth="75.0" styleClass="menu" text="Ciclo de Vida" />
+                  <TableColumn prefWidth="75.0" styleClass="menu" text="Modelos" />
+                  <TableColumn prefWidth="75.0" styleClass="menu" text="Tarifa" />
+                  <TableColumn prefWidth="75.0" styleClass="menu" text="Otrod Costos" />
+                  <TableColumn prefWidth="75.0" styleClass="menu" text="Ciclo de Vida" />
+                  <TableColumn prefWidth="75.0" styleClass="menu" text="Metricas" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </TableView>
+         </children>
+      </HBox>
+      <Pagination />
+   </children>
+</VBox>

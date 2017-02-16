@@ -1,0 +1,23 @@
+.menu{
+	-fx-background-color: #fff;
+}
+.btn-delete{
+	-fx-background-color: #ff003a;
+	-fx-text-fill: #ffffff;
+}
+.btn-desactive{
+	-fx-background-color: #00b9ff;
+	-fx-text-fill: #ffffff;
+}
+.btn{
+	-fx-background-color:#ffffff;
+	-fx-text-fill:  #00b9ff;
+}
+
+.backround-pane{
+	-fx-background-color:#00b9ff;
+	/*-fx-background-color: #ffc600;*/
+}
+.txt{
+	-fx-text-fill:#ffffff;
+}
