@@ -1,5 +1,6 @@
-package metrik;
+package controller;
 	
+
 import controller.ControladorVentanas;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -20,7 +21,6 @@ public class Main extends Application {
 			instancia.setPrimaryStage(primaryStage);
 			VBox root = FXMLLoader.load(getClass().getResource("../views/fxml/login.fxml"));
 			Scene scene = new Scene(root);
-			scene.getStylesheets().add(getClass().getResource("/views/css/style.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.centerOnScreen();
 			primaryStage.show();
