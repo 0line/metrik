@@ -4,8 +4,8 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.TilePane?>
 <?import jfxtras.scene.layout.VBox?>
 
 <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerMenu">
@@ -22,33 +22,13 @@
             </ImageView>
          </children>
       </HBox>
-      <FlowPane alignment="CENTER" columnHalignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+      <TilePane alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
          <children>
-            <JFXButton text="PROYECTOS" onAction="#Projects">
-               <FlowPane.margin>
-                  <Insets bottom="60.0" left="60.0" right="60.0" top="60.0" />
-               </FlowPane.margin>
-            </JFXButton>
-            <JFXButton text="USUARIOS" onAction="#Users">
-               <FlowPane.margin>
-                  <Insets bottom="60.0" left="60.0" right="60.0" top="60.0" />
-               </FlowPane.margin>
-            </JFXButton>
+            <JFXButton onAction="#Projects" text="PROYECTOS" />
+            <JFXButton onAction="#Users" text="USUARIOS" />
+            <JFXButton text="MÉTRICAS" />
+            <JFXButton text="MEDICIÓN" />
          </children>
-      </FlowPane>
-      <FlowPane alignment="CENTER" columnHalignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" rowValignment="TOP">
-         <children>
-            <JFXButton text="MÉTRICAS">
-               <FlowPane.margin>
-                  <Insets bottom="60.0" left="60.0" right="60.0" top="60.0" />
-               </FlowPane.margin>
-            </JFXButton>
-            <JFXButton text="MEDICIÓN">
-               <FlowPane.margin>
-                  <Insets bottom="60.0" left="60.0" right="60.0" top="60.0" />
-               </FlowPane.margin>
-            </JFXButton>
-         </children>
-      </FlowPane>
+      </TilePane>
    </children>
 </VBox>

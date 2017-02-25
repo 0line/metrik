@@ -57,7 +57,18 @@ public class ControllerLogin {
 				txtUsuario.clear();
 			}
 			else{
-				ventanas.asignarMenu("../views/fxml/menu.fxml", "Menu");
+				switch (usuario.getTipo_usuario()) {
+				case "Administrador":
+					ventanas.asignarMenu("../views/fxml/main.fxml", "main");
+					break;
+				case "Lider":
+					ventanas.asignarMenu("../views/fxml/main.fxml", "main");
+					break;
+				case "Miembro":
+					ventanas.asignarMenu("../views/fxml/main.fxml", "main");
+					break;
+				}
+			
 			}
 		}
 	}
