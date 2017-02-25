@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import java.lang.String?>
@@ -37,7 +38,7 @@
             </ImageView>
          </children>
       </GridPane>
-      <JFXTextField fx:id="txtUsuario" focusColor="WHITE" labelFloat="true" maxWidth="1.7976931348623157E308" promptText="Usuario:" unFocusColor="WHITE" VBox.vgrow="ALWAYS">
+      <JFXTextField fx:id="txtUsuario" focusColor="#0011ff" labelFloat="true" maxWidth="1.7976931348623157E308" promptText="Usuario:" unFocusColor="#0011ff" VBox.vgrow="ALWAYS">
          <VBox.margin>
             <Insets bottom="30.0" left="50.0" right="50.0" top="30.0" />
          </VBox.margin>
@@ -47,11 +48,11 @@
             <String fx:value="visible-lg" />
          </styleClass>
       </JFXTextField>
-      <JFXTextField fx:id="txtPassword" focusColor="WHITE" labelFloat="true" maxWidth="1.7976931348623157E308" promptText="Contraseña:" unFocusColor="WHITE" VBox.vgrow="ALWAYS">
+      <JFXPasswordField fx:id="txtPassword" focusColor="#0011ff" labelFloat="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Contraseña" unFocusColor="#0011ff" VBox.vgrow="ALWAYS">
          <VBox.margin>
             <Insets bottom="30.0" left="50.0" right="50.0" top="30.0" />
          </VBox.margin>
-      </JFXTextField>
+      </JFXPasswordField>
       <HBox alignment="CENTER">
          <children>
             <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Salir" HBox.hgrow="ALWAYS">
@@ -62,8 +63,8 @@
                   <FontAwesomeIconView glyphName="CLOSE" />
                </graphic>
                <styleClass>
-                  <String fx:value="btn" />
-                  <String fx:value="hidden-sm" />
+                  <String fx:value="btn-desactive" />
+                  <String fx:value="hidden-lg" />
                </styleClass>
                <padding>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
@@ -77,8 +78,8 @@
                   <FontAwesomeIconView glyphName="KEY" />
                </graphic>
                <styleClass>
-                  <String fx:value="btn" />
-                  <String fx:value="hidden-sm" />
+                  <String fx:value="btn-desactive" />
+                  <String fx:value="hidden-lg" />
                </styleClass>
                <padding>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />

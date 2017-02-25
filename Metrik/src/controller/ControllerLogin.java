@@ -1,5 +1,6 @@
 package controller;
 
+import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 
 
@@ -17,7 +18,7 @@ public class ControllerLogin {
 /*	@FXML TextField txtUsuario;
 	@FXML TextField txtPassword;*/
 	@FXML JFXTextField txtUsuario;
-	@FXML JFXTextField txtPassword;
+	@FXML JFXPasswordField txtPassword;
 
 
 	private DAOUsuarios daoUsuario;
