@@ -9,7 +9,8 @@ public class Usuario {
 	private ResultSet rs;
 	private Usuario usuarios;
 	private int id_usuario;
-	private String usuario, password,correo_e,tipo_usuario;
+	private String usuario, password,correo_e;
+	private static String tipo_usuario;
 	private Boolean estatus;
 	//Contructores
 	public Usuario(){

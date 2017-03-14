@@ -25,10 +25,11 @@ public class ControllerLogin {
 	private model.Usuario usuario;
 	private ControladorVentanas ventanas;
 	Alert mensaje = new Alert(AlertType.NONE);
-
+	private ControllerMenu cmenu;
 	public ControllerLogin(){
 		daoUsuario=new DAOUsuarios();
 		ventanas=ControladorVentanas.getInstancia();
+		cmenu=new ControllerMenu();
 	}
 	public void Advertencias(String titulo, String header, String content) {
 		mensaje.setAlertType(AlertType.WARNING);
@@ -38,7 +39,7 @@ public class ControllerLogin {
 		mensaje.show();
 	}
 
-	@FXML public void clickAcceso(){
+	@FXML public void clickAcceso() throws InstantiationException, IllegalAccessException{
 		
 		if(txtUsuario.getText().trim().isEmpty() || txtPassword.getText().trim().isEmpty()){
 			Advertencias("ADVERTENCIA", null, "Todos los Campos son Obligatorios.");
@@ -64,6 +65,8 @@ public class ControllerLogin {
 					break;
 				case "Lider":
 					ventanas.asignarMenu("../views/fxml/main.fxml", "main");
+					//cmenu.buttons("Lider");
+					ControllerMenu.class.newInstance().buttons("Lider");
 					break;
 				case "Miembro":
 					ventanas.asignarMenu("../views/fxml/main.fxml", "main");

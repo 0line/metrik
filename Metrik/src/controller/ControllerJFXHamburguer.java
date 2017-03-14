@@ -20,6 +20,9 @@ public class ControllerJFXHamburguer implements Initializable {
 	@FXML private JFXDrawersStack drawmenu;
 	@FXML private JFXDrawer listmenu;
 	private ControladorVentanas instancia;
+	private ControllerMenu ctrlMenu= new ControllerMenu();
+	
+	
 	
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
@@ -42,6 +45,5 @@ public class ControllerJFXHamburguer implements Initializable {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
-		
 	}
 }

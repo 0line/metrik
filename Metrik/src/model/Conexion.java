@@ -10,7 +10,7 @@ public class Conexion {
 	private String contrasenia;
 	private Connection con;
 	public Conexion() {
-		bd="Metrik";
+		bd="metrik";
 		usuario="postgres";
 		contrasenia="123456";
 		servidor="jdbc:postgresql://localhost:5432/";

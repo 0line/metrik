@@ -3,6 +3,8 @@ package controller;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXDrawer;
 import com.jfoenix.controls.JFXDrawersStack;
 import com.jfoenix.controls.JFXHamburger;
@@ -13,14 +15,23 @@ import javafx.fxml.Initializable;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
+import model.Usuario;
 
-public class ControllerMenu{
+public class ControllerMenu implements Initializable{
 	private ControladorVentanas instancia;
+	private Usuario usuario;
+	private String nivel;
 	
+	public ControllerMenu() {
+	usuario=new Usuario();
+	}
+	
+	
+	
+	private @FXML JFXButton btnInicio,btnProjects,btnUsers,btnMetric;
 	@FXML public void Projects(){
 		instancia = ControladorVentanas.getInstancia();
 		instancia.asignarMenu("../views/fxml/mtprojects.fxml", "Gestión de Proyectos");
-		
 	}
 	
 	@FXML public void Users(){
@@ -36,6 +47,29 @@ public class ControllerMenu{
 		instancia = ControladorVentanas.getInstancia();
 		instancia.asignarMenu("../views/fxml/main.fxml", "Inicio");
 	}
+
+	public void buttons(String nivel){
+		System.out.println(nivel);
+		switch (nivel) {
+		case "Administrador":
+			break;
+		case "Lider":
+			System.out.println("aqui");
+			//btnUsers.setDisable(true);
+			break;
+		case "Miembro":
+			break;
+		}
+		
+	}
+
+	
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {
+		
+	}
+
+	
 
 	
 	

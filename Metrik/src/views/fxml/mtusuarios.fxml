@@ -16,7 +16,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import jfxtras.scene.layout.VBox?>
 
-<GridPane alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="650.0" styleClass="backround-pane" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerJFXHamburguer">
+<GridPane alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="650.0" styleClass="backround-pane" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerTUsers">
   <columnConstraints>
     <ColumnConstraints halignment="LEFT" hgrow="NEVER" />
     <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" />
@@ -48,7 +48,7 @@
                         <Insets right="10.0" />
                      </FlowPane.margin>
                   </JFXTextField>
-                  <JFXButton styleClass="btn" text="Nuevo">
+                  <JFXButton fx:id="btnNuevo" onAction="#newData" styleClass="btn" text="Nuevo">
                      <FlowPane.margin>
                         <Insets right="10.0" />
                      </FlowPane.margin>

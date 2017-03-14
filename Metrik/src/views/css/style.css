@@ -1,22 +1,21 @@
 .menu{
-	-fx-background-color: #2196F3;
+	-fx-background-color: #616161;
 }
 .btn-delete{
-	-fx-background-color: #ff003a;
+	-fx-background-color: #B71C1C;
 	-fx-text-fill: #ffffff;
 }
 .btn-desactive{
-	-fx-background-color: rgb(36,66,135);
+	-fx-background-color: #01579B;
 	-fx-text-fill: #ffffff;
 }
 .btn{
-	-fx-background-color:#ffffff;
-	-fx-text-fill:  #2196F3;
+	-fx-background-color:#474747;
+	-fx-text-fill:  #fff;
 }
 
 .backround-pane{
-	-fx-background-color:#fff;
-	/*-fx-background-color: #ffc600;*/
+	-fx-background-color:#ADADAD;
 }
 .txt{
 	-fx-text-fill:#ffffff;
@@ -43,25 +42,25 @@
 }
 .tableview{
 	-fx-font-family: "Arial";
-    -fx-font-size: 13.0px;
-    -fx-base: rgb(255,255,255);
-    -fx-background: #ffffff;
+    -fx-font-size: 10.0px;
+    -fx-base: #ADADAD;
+    -fx-background: #ADADAD;
     -fx-focus-color: #fff;
-    -fx-control-inner-background: #fff;
-    -fx-text-background-color: rgb(36,66,135);
+    -fx-control-inner-background: #ADADAD;
+    -fx-text-background-color: #fff;
     -fx-inner-border: linear-gradient(to bottom, derive(-fx-color,70.19354838709677%) 0%, derive(-fx-color,29.200000000000003%) 100%);
     -fx-body-color: linear-gradient( to bottom, derive(-fx-color, 34.0%) 0%, derive(-fx-color, -18.0%) 100%);
 }
 
 .colums{
-	-fx-base-text:#ffffff;
-	-fx-background-color: rgb(255,255,255) ;
-	-fx-border-color: rgb(211,215,207);
-	-fx-text-fill: rgb(36,66,135);
+	-fx-base-text:#000;
+	-fx-background-color: #616161 ;
+	-fx-border-color: #616161;
+	-fx-text-fill:  #fff;
 	-fx-font-family: "Arial";
 	-fx-font-size: 12pt;
 	-fx-alignment:center;
-	-fx-control-inner-background:rgb(36,66,135);
+	-fx-control-inner-background: #000;
 }
 .colums:hover{
 	-fx-text-fill: #ffffff;
@@ -71,3 +70,12 @@
 	-fx-text-fill: #ffffff;
 	-fx-background-color: black;
 }
+.jfx-text-field, .jfx-password-field{
+	-fx-background-color: transparent ;
+	-fx-text-fill: #252525;
+    -fx-font-weight: BOLD;
+    -fx-prompt-text-fill: #616161;
+    -jfx-focus-color: #616161;
+    -jfx-unfocus-color: #616161;  
+}
+
