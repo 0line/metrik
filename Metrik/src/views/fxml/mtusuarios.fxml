@@ -16,7 +16,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import jfxtras.scene.layout.VBox?>
 
-<GridPane alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="650.0" styleClass="backround-pane" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerTUsers">
+<GridPane alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="650.0" styleClass="backround-pane" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerTUsers">
   <columnConstraints>
     <ColumnConstraints halignment="LEFT" hgrow="NEVER" />
     <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" />
@@ -80,15 +80,15 @@
             </FlowPane>
             <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="backround-pane">
                <children>
-                  <TableView maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="backround-pane" HBox.hgrow="ALWAYS">
+                  <TableView fx:id="tvUsers" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="backround-pane" HBox.hgrow="ALWAYS">
                     <columns>
-                        <TableColumn prefWidth="75.0" styleClass="menu" text="ID" />
-                      <TableColumn prefWidth="75.0" styleClass="menu" text="Nombre" />
-                      <TableColumn prefWidth="75.0" styleClass="menu" text="Usuario" />
-                        <TableColumn prefWidth="75.0" styleClass="menu" text="Contraseña" />
-                        <TableColumn prefWidth="75.0" styleClass="menu" text="Correo" />
-                        <TableColumn prefWidth="75.0" styleClass="menu" text="Tipo de Usuario" />
-                        <TableColumn prefWidth="75.0" styleClass="menu" text="Activo" />
+                        <TableColumn fx:id="tvcid" prefWidth="75.0" styleClass="menu" text="ID" />
+                      <TableColumn fx:id="tvcname" prefWidth="75.0" styleClass="menu" text="Nombre" />
+                      <TableColumn fx:id="tvcuser" prefWidth="75.0" styleClass="menu" text="Usuario" />
+                        <TableColumn fx:id="tvcpsw" prefWidth="75.0" styleClass="menu" text="Contraseña" />
+                        <TableColumn fx:id="tvcemail" prefWidth="75.0" styleClass="menu" text="Correo" />
+                        <TableColumn fx:id="tvctypeuser" prefWidth="75.0" styleClass="menu" text="Tipo de Usuario" />
+                        <TableColumn fx:id="tvcstatus" prefWidth="75.0" styleClass="menu" text="Activo" />
                     </columns>
                      <columnResizePolicy>
                         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
@@ -99,7 +99,7 @@
                   </TableView>
                </children>
             </HBox>
-            <Pagination />
+            <Pagination fx:id="pagTUsers" />
          </children>
       </VBox>
    </children>

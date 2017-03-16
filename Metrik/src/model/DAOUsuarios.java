@@ -3,6 +3,8 @@ package model;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import model.Conexion;
 import model.Usuario;
 
@@ -11,9 +13,10 @@ public class DAOUsuarios {
 	private PreparedStatement comando;
 	private ResultSet rs;
 	private Usuario usuario;
-	
+	private ObservableList<Usuario>listUsers;
 	public DAOUsuarios(){
 		micon=new Conexion();
+		listUsers=FXCollections.observableArrayList();
 	}
 	
 	public Usuario validarUsuario(Usuario u){
@@ -31,7 +34,7 @@ public class DAOUsuarios {
 				usuario.setCorreo_e(rs.getString("correo_e"));
 				usuario.setTipo_usuario(rs.getString("tipo_usuario"));
 				usuario.setId_usuario(rs.getInt("id_usuario"));
-				usuario.setEstatus(rs.getBoolean("estatus"));
+				usuario.setEstatus(rs.getBoolean("estatus"));				
 				
 			}
 		} catch (Exception e) {
@@ -42,6 +45,27 @@ public class DAOUsuarios {
 			micon.desconectar();
 		}
 		return usuario;
+	}
+	public ObservableList<Usuario> consultarUsers(String sql){
+		try {
+			micon.conectar();
+			comando=micon.getCon().prepareStatement(sql);
+			rs = comando.executeQuery();
+			while (rs.next()) {
+				usuario = new Usuario();
+				usuario.setUsuario(rs.getString("usuario"));
+				usuario.setPassword(rs.getString("password"));
+				usuario.setCorreo_e(rs.getString("correo_e"));
+				usuario.setTipo_usuario(rs.getString("tipo_usuario"));
+				usuario.setId_usuario(rs.getInt("id_usuario"));
+				usuario.setEstatus(rs.getBoolean("estatus"));
+				listUsers.add(usuario);
+			}
+		} catch (Exception e) {
+			micon.desconectar();
+		}
+		return listUsers;
+		
 	}
 	
 	
