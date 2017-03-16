@@ -46,6 +46,7 @@ public class DAOUsuarios {
 		}
 		return usuario;
 	}
+	//Listar usuarios
 	public ObservableList<Usuario> consultarUsers(String sql){
 		try {
 			micon.conectar();

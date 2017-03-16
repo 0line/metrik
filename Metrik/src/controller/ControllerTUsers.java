@@ -117,7 +117,7 @@ public class ControllerTUsers implements Initializable {
 		});
 	}
 	
-	//Estatus tiene un error y falta el campo nombre
+	
 	@FXML public void addColumns(){
 		tvcid.setCellValueFactory(new PropertyValueFactory<Usuario, Integer>("id_usuario"));
 		tvcname.setCellValueFactory(new PropertyValueFactory<Usuario, String>("nombre"));

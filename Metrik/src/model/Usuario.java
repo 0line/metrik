@@ -105,7 +105,7 @@ public class Usuario {
 	}
 	
 
-	
+	//Organiza el código
 	public Usuario validarUsuario(Usuario u){
 		try {
 			micon.conectar();
